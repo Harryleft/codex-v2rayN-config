@@ -1,0 +1,122 @@
+[
+  {
+    "Id": "9200000000000000001",
+    "Port": "",
+    "OutboundTag": "proxy",
+    "Domain": [
+      "domain:googleapis.cn",
+      "domain:gstatic.com"
+    ],
+    "Enabled": true,
+    "Remarks": "Google cn"
+  },
+  {
+    "Id": "9200000000000000002",
+    "Port": "443",
+    "Network": "udp",
+    "OutboundTag": "block",
+    "Enabled": true,
+    "Remarks": "阻断 udp 443"
+  },
+  {
+    "Id": "9200000000000000003",
+    "OutboundTag": "block",
+    "Domain": [
+      "geosite:category-ads-all"
+    ],
+    "Enabled": true,
+    "Remarks": "阻断广告"
+  },
+  {
+    "Id": "9200000000000000004",
+    "OutboundTag": "direct",
+    "Ip": [
+      "geoip:private"
+    ],
+    "Enabled": true,
+    "Remarks": "局域网 IP 直连"
+  },
+  {
+    "Id": "9200000000000000005",
+    "OutboundTag": "direct",
+    "Domain": [
+      "geosite:private"
+    ],
+    "Enabled": true,
+    "Remarks": "局域网域名直连"
+  },
+  {
+    "Id": "9200000000000000006",
+    "OutboundTag": "direct",
+    "Ip": [
+      "223.5.5.5",
+      "223.6.6.6",
+      "2400:3200::1",
+      "2400:3200:baba::1",
+      "119.29.29.29",
+      "1.12.12.12",
+      "120.53.53.53",
+      "180.76.76.76",
+      "114.114.114.114",
+      "114.114.115.115",
+      "1.2.4.8",
+      "210.2.4.8"
+    ],
+    "Enabled": true,
+    "Remarks": "常用 DNS IP 直连"
+  },
+  {
+    "Id": "9200000000000000007",
+    "OutboundTag": "direct",
+    "Domain": [
+      "domain:alidns.com",
+      "domain:doh.pub",
+      "domain:dot.pub",
+      "domain:360.cn",
+      "domain:onedns.net"
+    ],
+    "Enabled": true,
+    "Remarks": "常用 DNS 域名直连"
+  },
+  {
+    "Id": "9200000000000000008",
+    "OutboundTag": "direct",
+    "Ip": [
+      "geoip:cn"
+    ],
+    "Enabled": true,
+    "Remarks": "国内 IP 直连"
+  },
+  {
+    "Id": "9200000000000000009",
+    "OutboundTag": "direct",
+    "Domain": [
+      "geosite:cn"
+    ],
+    "Enabled": true,
+    "Remarks": "国内域名直连"
+  },
+  {
+    "Id": "9200000000000000010",
+    "Port": "",
+    "OutboundTag": "direct",
+    "Domain": [
+      "domain:speedtest.net",
+      "domain:ookla.com",
+      "domain:ooklaserver.net",
+      "domain:fast.com",
+      "domain:nperf.com",
+      "domain:measurementlab.net",
+      "domain:mlab-sandbox.measurementlab.net"
+    ],
+    "Enabled": true,
+    "Remarks": "测速服务直连"
+  },
+  {
+    "Id": "9200000000000010000",
+    "Port": "0-65535",
+    "OutboundTag": "proxy",
+    "Enabled": true,
+    "Remarks": "最终代理"
+  }
+]
