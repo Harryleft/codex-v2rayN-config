@@ -7,7 +7,7 @@ This repository contains a Codex Skill for safely configuring v2rayN on Windows 
 Install or reference the Skill in `skills/v2rayn-routing-config`, then ask your AI agent:
 
 ```text
-Use $v2rayn-routing-config to configure my v2rayN. My v2rayN path is D:\v2rayN\v2rayN.
+Use $v2rayn-routing-config to configure my v2rayN. My v2rayN path is <v2rayN-root>.
 ```
 
 After the AI applies the configuration, open v2rayN and click:
@@ -19,7 +19,7 @@ After the AI applies the configuration, open v2rayN and click:
 Then ask:
 
 ```text
-Use $v2rayn-routing-config to verify my v2rayN routing. My v2rayN path is D:\v2rayN\v2rayN.
+Use $v2rayn-routing-config to verify my v2rayN routing. My v2rayN path is <v2rayN-root>.
 ```
 
 ## What The Skill Does
@@ -50,13 +50,13 @@ skills/v2rayn-routing-config/references/v2rayn-routing-rules.json
 Agents should usually call the Skill, but the scripts can also be run directly:
 
 ```powershell
-python .\skills\v2rayn-routing-config\scripts\apply_v2rayn_route.py --base "D:\v2rayN\v2rayN"
+python .\skills\v2rayn-routing-config\scripts\apply_v2rayn_route.py --base "<v2rayN-root>"
 ```
 
 After clicking `重启服务` in v2rayN:
 
 ```powershell
-python .\skills\v2rayn-routing-config\scripts\verify_v2rayn_route.py --base "D:\v2rayN\v2rayN"
+python .\skills\v2rayn-routing-config\scripts\verify_v2rayn_route.py --base "<v2rayN-root>"
 ```
 
 Expected verification:

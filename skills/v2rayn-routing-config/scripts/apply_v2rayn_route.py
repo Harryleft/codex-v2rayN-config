@@ -79,7 +79,7 @@ def apply_route(base: Path, rules_path: Path) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Safely apply Codex-ready v2rayN routing rules.")
-    parser.add_argument("--base", required=True, help="v2rayN root directory, e.g. D:\\v2rayN\\v2rayN")
+    parser.add_argument("--base", required=True, help="v2rayN root directory, e.g. C:\\path\\to\\v2rayN")
     parser.add_argument("--rules", default=str(default_rules_path()), help="routing rules JSON path")
     args = parser.parse_args()
 

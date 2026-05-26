@@ -32,7 +32,7 @@ Configure an existing Windows v2rayN installation without closing v2rayN or modi
 Example:
 
 ```powershell
-python skills\v2rayn-routing-config\scripts\apply_v2rayn_route.py --base "D:\v2rayN\v2rayN"
+python skills\v2rayn-routing-config\scripts\apply_v2rayn_route.py --base "<v2rayN-root>"
 ```
 
 If the system `python` command is unavailable, use any available Python 3 runtime.
@@ -42,7 +42,7 @@ If the system `python` command is unavailable, use any available Python 3 runtim
 After the user confirms they clicked `重启服务`, run:
 
 ```powershell
-python skills\v2rayn-routing-config\scripts\verify_v2rayn_route.py --base "D:\v2rayN\v2rayN"
+python skills\v2rayn-routing-config\scripts\verify_v2rayn_route.py --base "<v2rayN-root>"
 ```
 
 Expected checks:

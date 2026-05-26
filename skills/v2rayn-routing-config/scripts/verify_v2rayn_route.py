@@ -49,7 +49,7 @@ def verify(base: Path) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Verify v2rayN routing profile and runtime rules.")
-    parser.add_argument("--base", required=True, help="v2rayN root directory, e.g. D:\\v2rayN\\v2rayN")
+    parser.add_argument("--base", required=True, help="v2rayN root directory, e.g. C:\\path\\to\\v2rayN")
     args = parser.parse_args()
     print(json.dumps(verify(Path(args.base)), ensure_ascii=False, indent=2))
 
