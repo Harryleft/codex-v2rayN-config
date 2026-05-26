@@ -1,0 +1,4 @@
+interface:
+  display_name: "v2RayN Routing Config"
+  short_description: "Safely apply Codex-ready v2RayN TUN routing rules."
+  default_prompt: "Use $v2rayn-routing-config to configure v2RayN TUN routing for this Windows system."
